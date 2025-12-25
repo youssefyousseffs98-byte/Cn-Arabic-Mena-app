@@ -10,14 +10,32 @@
 <body>
 
 <header>
-  <h1>📺 كرتون نتورك</h1>
+  <h1>  </h1>
   <select id="channelSelect">
-    <option value="arabic">CN بالعربية</option>
+    <option value="arabic">CN </option>
     <option value="mena">CN MENA</option>
+  </select>
+
+  <select id="daySelect">
+    <option value="Sunday"></option>
+    <option value="Monday"></option>
+    <option value="Tuesday"></option>
+    <option value="Wednesday"></option>
+    <option value="Thursday"></option>
+    <option value="Friday"></option>
+    <option value="Saturday"></option>
   </select>
 </header>
 
 <main id="schedule"></main>
+
+<!--    -->
+<div id="popup" class="popup">
+  <span id="closePopup" class="close">&times;</span>
+  <h2 id="popupTitle"></h2>
+  <img id="popupImage" src="" alt="">
+  <p id="popupDescription"></p>
+</div>
 
 <script src="script.js"></script>
 <script>

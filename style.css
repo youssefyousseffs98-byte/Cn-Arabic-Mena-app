@@ -12,7 +12,7 @@ header {
 }
 
 select {
-  margin-top: 10px;
+  margin: 10px;
   padding: 8px;
   border-radius: 6px;
   border: none;
@@ -29,9 +29,39 @@ main {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .time {
   color: #ffcc00;
   font-weight: bold;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+
+.popup img {
+  max-width: 80%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
